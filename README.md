@@ -88,8 +88,39 @@ Now you can push the code to your repository
 git push -u origin main
 ```
 
-### 6. Utilise repository as normal
+### 6. Make sure you can run the tests
 
-Now you can continue to utilise the repository as normal, commmiting and pushing as normal.
+You should now be able to run the Scala tests either from the command line or your editor (such as IntelliJ)
+
+```
+sbt test
+```
+
+Should produce output similar to the following:
+
+```
+[info] welcome to sbt 1.6.2 (Azul Systems, Inc. Java 11.0.14)
+[info] loading global plugins from /Users/someuser/.sbt/1.0/plugins
+[info] loading project definition from /Users/someuser/Developer/techreturners/yrtt/lm-code-kata-scala-starter/project
+[info] loading settings for project root from build.sbt ...
+[info] set current project to lm-code-kata-scala-starter (in build file:/Users/someuser/Developer/techreturners/yrtt/lm-code-kata-scala-starter/)
+[info] compiling 1 Scala source to /Users/someuser/Developer/techreturners/yrtt/lm-code-kata-scala-starter/target/scala-2.13/classes ...
+[info] compiling 1 Scala source to /Users/someuser/Developer/techreturners/yrtt/lm-code-kata-scala-starter/target/scala-2.13/test-classes ...
+[info] AppTest:
+[info] A string from the app
+[info] - should be Hi from Tech Returners
+[info] Run completed in 193 milliseconds.
+[info] Total number of tests run: 1
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[success] Total time: 3 s, completed 30 Apr 2022, 22:05:47
+```
+
+If you do see it run the tests then you're all ready to go 🙌
+
+### 7. Utilise repository as normal
+
+Now you can continue to utilise the repository as normal, committing and pushing as normal.
 
 
