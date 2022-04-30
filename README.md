@@ -28,10 +28,16 @@ Next navigate to that directory and `git pull` this code
 cd bowling-game-kata
 ```
 
-And to then pull the code
+Initialise git
 
 ```
-git pull 
+git init
+```
+
+And then pull the starter code
+
+```
+git pull https://github.com/techreturners/lm-code-kata-scala-starter.git
 ```
 
 ### 3. Open up GitHub.com and create a new repository
