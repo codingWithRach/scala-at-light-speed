@@ -40,6 +40,12 @@ And then pull the starter code
 git pull https://github.com/techreturners/lm-code-kata-scala-starter.git
 ```
 
+Once the code has been pulled then rename the branch to **main**
+
+```
+git branch -M main
+```
+
 ### 3. Open up GitHub.com and create a new repository
 
 Go to GitHub.com and create a new repository.
