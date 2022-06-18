@@ -1,126 +1,47 @@
-# Scala Kata Starter Code
+# The official repository for the Rock the JVM Scala at Light Speed course
 
-This repository contains starter code for attempting a Scala kata exercise.
+This repository contains the code we wrote during  [Rock the JVM's Scala at Light Speed](https://rockthejvm.com/course/scala-at-light-speed) mini-course/video series. Unless explicitly mentioned, the code in this repository is exactly what was caught on camera.
 
-It assumes that you have Java, Scala and Scala Build Tool (SBT) installed.
+## How to install
 
-If you haven't yet installed these, it's worth following the instructions on the Scala refresh exercises regarding Scala setup and installation
+- if you don't have IntelliJ IDEA installed, install it from the [official site](https://jetbrains.com)
+- either clone the repo or download as zip
+- open with IntelliJ as an SBT project
 
-https://github.com/techreturners/scala_coding_exercises
+### How to start
 
-## Instructions
-
-To utilise this starter code
-
-### 1. Create a new folder on your computer that will house the starter code.
-
-For example if you are working on a bowling game kata, using the command line you would do:
+Clone this repository and checkout the `start` tag by running the following in the repo folder:
 
 ```
-mkdir bowling-game-kata
+git checkout start
 ```
 
-### 2. Change to the directory and pull this code
+### How to see the final code
 
-Next navigate to that directory and `git pull` this code
-
-```
-cd bowling-game-kata
-```
-
-Initialise git
+The master branch contains the final code, so you can download the repository as is, or if you've navigated somewhere in the code history, then do
 
 ```
-git init
+git checkout master
 ```
 
-And then pull the starter code
+### How to run an intermediate state
 
-```
-git pull https://github.com/techreturners/lm-code-kata-scala-starter.git
-```
+The repository was built while recording the videos. Prior to each video, I tagged each commit so you can easily go back to an earlier state of the repo!
 
-Once the code has been pulled then rename the branch to **main**
+The tags are as follows:
 
-```
-git branch -M main
-```
+* `start`
+* `basics`
+* `object-orientation`
+* `functional-programming`
+* `pattern-matching`
+* `advanced`
 
-### 3. Open up GitHub.com and create a new repository
+When you watch a video, you can `git checkout` the appropriate tag and the repo will go back to the exact code I had when I started the lecture.
 
-Go to GitHub.com and create a new repository.
+### For questions or suggestions
 
-Give the repository a name - suggest naming the repository the same name as your folder
-
-Make sure it is **Private**
-
-Then leave everything else as blank. So do NOT create a README, GitIgnore or Licence.
-
-Click **Create repository**
-
-### 4. Copy URL of new repository
-
-You should then see a screen telling you how to push to the repository.
-
-Copy the URL of the repository. For example if a user called **pluto** had created a repository called **bowling-game-kata** then the URL would be:
-
-https://github.com/pluto/bowling-game-kata.git
-
-### 5. Push starter code back to repository
-
-Then back on your computer whilst within your newly created directory. 
-
-Configure your GitHub origin server (for where you will be pushing code back to)
-
-```
-git remote add origin URL_YOU_COPIED
-```
-
-Replacing the **URL_YOU_COPIED** with the correct URL. For example:
-
-```
-git remote add origin https://github.com/pluto/bowling-game-kata.git
-```
-
-Now you can push the code to your repository
-
-```
-git push -u origin main
-```
-
-### 6. Make sure you can run the tests
-
-You should now be able to run the Scala tests either from the command line or your editor (such as IntelliJ)
-
-```
-sbt test
-```
-
-Should produce output similar to the following:
-
-```
-[info] welcome to sbt 1.6.2 (Azul Systems, Inc. Java 11.0.14)
-[info] loading global plugins from /Users/someuser/.sbt/1.0/plugins
-[info] loading project definition from /Users/someuser/Developer/techreturners/yrtt/lm-code-kata-scala-starter/project
-[info] loading settings for project root from build.sbt ...
-[info] set current project to lm-code-kata-scala-starter (in build file:/Users/someuser/Developer/techreturners/yrtt/lm-code-kata-scala-starter/)
-[info] compiling 1 Scala source to /Users/someuser/Developer/techreturners/yrtt/lm-code-kata-scala-starter/target/scala-2.13/classes ...
-[info] compiling 1 Scala source to /Users/someuser/Developer/techreturners/yrtt/lm-code-kata-scala-starter/target/scala-2.13/test-classes ...
-[info] AppTest:
-[info] A string from the app
-[info] - should be Hi from Tech Returners
-[info] Run completed in 193 milliseconds.
-[info] Total number of tests run: 1
-[info] Suites: completed 1, aborted 0
-[info] Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-[info] All tests passed.
-[success] Total time: 3 s, completed 30 Apr 2022, 22:05:47
-```
-
-If you do see it run the tests then you're all ready to go 🙌
-
-### 7. Utilise repository as normal
-
-Now you can continue to utilise the repository as normal, committing and pushing as normal.
-
-
+If you have changes to suggest to this repo, either
+- submit a GitHub issue
+- tell me in the comments to the videos
+- submit a pull request!
