@@ -6,7 +6,7 @@ object Basics extends App {
   val meaningOfLife: Int = 42 // const int meaningOfLife = 42;
 
   // Int, Boolean, Char, Double, Float, String
-  val aBoolean = false // type is optional
+  val aBoolean = false // type is optional (test)
 
   // strings and string operations
   val aString = "I love Scala"
